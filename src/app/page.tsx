@@ -15,8 +15,8 @@ export default function Home() {
               <h3>Вы продаете</h3>
               <div className={styles.walletName}>
                 <span>
-                  <img className={styles.imgBefore} src="/img/monst.png" alt="" />
-                  CRYG <img className={styles.imgAfter} src="/img/back2.png" alt="" />
+                  <img className={styles.imgBefore} src="./img/monst.png" alt="" />
+                  CRYG <img className={styles.imgAfter} src="./img/back2.png" alt="" />
                 </span>
                 <h1>1</h1>
               </div>
