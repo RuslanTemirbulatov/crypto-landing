@@ -1,0 +1,400 @@
+@import '/car-catalog/src/styles/reset.css';
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'poppins';
+}
+
+.content {
+  margin-top: 50px;
+  width: 523px;
+  height: 554px;
+  background-color: #222341;
+  border-radius: 20px;
+}
+
+.titleBtns {
+  margin: 20px 0 0 20px;
+}
+
+.btn1 {
+  font-size: 18px;
+  color: #64647A;
+  font-weight: 400;
+  margin-right: 14px;
+  cursor: pointer;
+  &.active {
+  color: #fff;
+  font-weight: 600;
+  }
+}
+
+.btn2 {
+  font-size: 18px;
+  color: #64647A;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+  &.active {
+  color: #fff;
+  font-weight: 600;
+  }
+  &:hover {
+    color: #aaaaaf;
+}
+}
+.walletContainer {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.wallet1 {
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 162px;
+  background-color: #292946;
+  border-radius: 20px;
+  h3 {
+    margin: 18px 0 20px 0;
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #bfbfc7;
+  }
+}
+
+
+.walletName {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+  span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    img {
+      margin: 0 6px 0 6px;
+    }
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+  }
+  
+}
+
+.walletSupTitile {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    color: #bfbfc7;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.wallet2 {
+  @extend .wallet1;
+  background-color: #4a495e;
+}
+
+.exchange {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  height: 40px;
+  width: 483px;
+  background-color: #24223b;
+  border-radius: 10px;
+  img {
+    margin: 0 10px 0 20px;
+  }
+  p {
+    color: #bdbdc4;
+  }
+  span {
+    color: #387ebb;
+  }
+}
+
+.connectBtn {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px auto 0 20px;
+  width: 483px;
+  height: 56px;
+  background-color: #40A5F3;
+  border-radius: 14px;
+  transition: 0.3s;
+  &:hover {
+    background-color: #1063a2;
+  }
+  img {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content {
+    margin-top: 80px;
+    width: 400px;
+    height: 380px;
+  }
+  .btn1 {
+    font-size: 16px;
+    }
+  
+  .btn2 {
+    font-size: 16px;
+    }
+  .wallet1 {
+    height: 100px;
+    h3 {
+      margin: 5px 0 5px 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #bfbfc7;
+    }
+  }
+  .walletName {
+    margin-bottom: 10px;
+    span {
+      font-size: 18px;
+      .imgBefore {
+        width: 30px;
+        height: 30px;
+      }
+      .imgAfter {
+        width: 10px;
+        height: 10px;
+      }
+    }
+    h1 {
+      font-size: 18px;
+      color: #fff;
+    }
+    
+  }
+  
+  .walletSupTitile {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      color: #bfbfc7;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .exchange {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 20px;
+    width: 90%;
+    background-color: #24223b;
+    border-radius: 10px;
+    img {
+      width: 15px;
+      height: 15px;
+      margin: 0 5px 0 10px;
+    }
+  }
+  .connectBtn {
+    font-size: 12px;
+    margin: 10px auto 0 20px;
+    width: 90%;
+    height: 40px;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    margin-top: 80px;
+    width: 360px;
+    height: 340px;
+  }
+  .titleBtns {
+    margin: 10px 0 0 20px;
+  }
+  .btn1 {
+    font-size: 16px;
+  }
+  
+  .btn2 {
+    font-size: 16px;
+  }
+  .wallet1 {
+    height: 100px;
+    margin: 10px auto 0 auto;
+    h3 {
+      margin: 5px 0 5px 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #bfbfc7;
+    }
+  }
+  .walletName {
+    margin-bottom: 10px;
+    span {
+      font-size: 18px;
+      .imgBefore {
+        width: 25px;
+        height: 25px;
+      }
+      .imgAfter {
+        width: 7px;
+        height: 7px;
+      }
+    }
+    h1 {
+      font-size: 18px;
+      color: #fff;
+    }
+    
+  }
+  
+  .walletSupTitile {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      color: #bfbfc7;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .exchange {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 15px;
+    width: 90%;
+    background-color: #24223b;
+    border-radius: 10px;
+    img {
+      width: 15px;
+      height: 15px;
+      margin: 0 5px 0 10px;
+    }
+  }
+  .connectBtn {
+    font-size: 12px;
+    margin: 10px auto 0 20px;
+    width: 90%;
+    height: 35px;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .content {
+    margin-top: 80px;
+    width: 330px;
+    height: 300px;
+  }
+  .titleBtns {
+    margin: 10px 0 0 20px;
+  }
+  .btn1 {
+    font-size: 16px;
+  }
+  
+  .btn2 {
+    font-size: 16px;
+  }
+  .wallet1 {
+    height: 90px;
+    margin: 5px auto 0 auto;
+    h3 {
+      margin: 5px 0 5px 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #bfbfc7;
+    }
+  }
+  .walletName {
+    margin-bottom: 5px;
+    span {
+      font-size: 18px;
+      .imgBefore {
+        width: 20px;
+        height: 20px;
+      }
+      .imgAfter {
+        width: 5px;
+        height: 5px;
+      }
+    }
+    h1 {
+      font-size: 18px;
+      color: #fff;
+    }
+    
+  }
+  
+  .walletSupTitile {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      color: #bfbfc7;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .exchange {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 15px;
+    width: 90%;
+    background-color: #24223b;
+    border-radius: 10px;
+    img {
+      width: 15px;
+      height: 15px;
+      margin: 0 5px 0 10px;
+    }
+  }
+  .connectBtn {
+    font-size: 12px;
+    margin: 10px auto 0 20px;
+    width: 90%;
+    height: 30px;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}
